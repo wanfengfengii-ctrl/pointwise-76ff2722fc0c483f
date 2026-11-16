@@ -1,0 +1,115 @@
+{
+  "graph": {
+    "nodes": [
+      "S",
+      "U",
+      "V",
+      "T",
+      "I"
+    ],
+    "roads": [
+      {
+        "id": "a",
+        "tail": "S",
+        "head": "U",
+        "length": "1"
+      },
+      {
+        "id": "d",
+        "tail": "S",
+        "head": "U",
+        "length": "2"
+      },
+      {
+        "id": "b",
+        "tail": "U",
+        "head": "V",
+        "length": "1"
+      },
+      {
+        "id": "c",
+        "tail": "V",
+        "head": "T",
+        "length": "1"
+      }
+    ],
+    "forbidden": [
+      [
+        "a",
+        "b",
+        "c"
+      ]
+    ]
+  },
+  "source": {
+    "node": "S"
+  },
+  "target": {
+    "node": "T"
+  },
+  "observations": [
+    {
+      "time": "0",
+      "candidates": [
+        {
+          "id": "start",
+          "position": {
+            "node": "S"
+          },
+          "penalty": "0"
+        }
+      ]
+    },
+    {
+      "time": "1",
+      "candidates": [
+        {
+          "id": "inside-1",
+          "position": {
+            "road": "b",
+            "offset": "1/3"
+          },
+          "penalty": "0"
+        }
+      ]
+    },
+    {
+      "time": "2",
+      "candidates": [
+        {
+          "id": "inside-2",
+          "position": {
+            "road": "b",
+            "offset": "2/3"
+          },
+          "penalty": "0"
+        }
+      ]
+    },
+    {
+      "time": "2",
+      "candidates": [
+        {
+          "id": "repeat",
+          "position": {
+            "road": "b",
+            "offset": "2/3"
+          },
+          "penalty": "0"
+        }
+      ]
+    },
+    {
+      "time": "3",
+      "candidates": [
+        {
+          "id": "finish",
+          "position": {
+            "node": "T"
+          },
+          "penalty": "0"
+        }
+      ]
+    }
+  ]
+}
