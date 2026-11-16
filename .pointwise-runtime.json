@@ -18,7 +18,7 @@
     "python3.11",
     "-B",
     "run.py",
-    "demo",
-    "samples.json"
+    "ambiguity",
+    "ambiguity_examples.json"
   ]
 }
